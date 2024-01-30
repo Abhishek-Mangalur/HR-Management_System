@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(3,40,48);
+} 
+
+.div1{
+    padding: 10px;
+    display: inline-block;
+    font-size: 2em;
+}
+
+#div11{
+    color: rgb(110,223,246);
+}
+
+#div21{
+    /* border: 2px solid black; */
+    float: right;
+    margin: 30px 20px;
+}
+
+.b1{
+    background-color: #0DCAF0;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 1.2em;
+}
+
+.b1:hover{
+    text-decoration: underline;
+}
+
+.a1:hover{
+    text-decoration: underline;
+}
+
+.litems{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.div31{
+    background-color: #0DCAF0;
+    padding: 10px;
+    display: flex;
+}
+
+#div311{
+    display: block;
+}
+
+.a11{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4em;
+}
+
+.a11:hover{
+    text-decoration: none;
+}
+
+.div32{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.division{
+    border: 1px solid black;
+    margin: 30px;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: #0DCAF0;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 30px 30px 30px black;
+}
+
+#division2{
+    float: right;
+}
+
+.div42{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul li{
+    display: inline-block;
+    position: relative;
+}
+
+ul li a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    font-size: 20px;
+}
+
+ul li ul.dropdown li{
+    display: block;
+}
+
+ul li ul.dropdown{
+    width: 160px;
+    position: absolute;
+    display: none;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #0DCAF0;
+}
+
+.a1{
+    margin-right: 10px;
+    font-size: 1.4em;
+}
+
+.a2{
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.a2:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.a1:hover{
+    text-decoration: none;
+}
+
+.divs{
+    padding: 30px;
+    font-size: 2em;
+}
