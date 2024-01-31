@@ -29,7 +29,7 @@
             <a href="logout.php" id="a31">Logout</a>
         </div>
         <div id="div4">
-            <a href="salary.html" id="a41">Salary</a>
+            <a href="salary.php" id="a41">Salary</a>
         </div>
         <div id="div6">
             <div class="divs" id="div61">

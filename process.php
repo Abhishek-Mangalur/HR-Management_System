@@ -11,6 +11,9 @@
         $email=$_POST['email'];
         $dept=$_POST['dept'];
         $age=$_POST['age'];
+        $dob=$_POST['dob'];
+        $mob=$_POST['mob'];
+        $desig=$_POST['desig'];
         $bank=$_POST['bnkname'];
         $ac=$_POST['acno'];
         $gender=$_POST['gender'];
@@ -20,7 +23,7 @@
         {
             $chk.=$chk1." ";
         }
-        $sql="insert into empdetails(empid, user_name, password, name, addr, email, dept, age, bank, ac, gender, edu) values('$empid', '$user_name', '$password', '$name', '$addr', '$email', '$dept', '$age', '$bank', '$ac', '$gender', '$chk')";
+        $sql="insert into empdetails(empid, user_name, password, name, addr, email, dept, age, dob, mob, desig, bank, ac, gender, edu) values('$empid', '$user_name', '$password', '$name', '$addr', '$email', '$dept', '$age', '$dob', '$mob', '$desig', '$bank', '$ac', '$gender', '$chk')";
         if(mysqli_query($conn, $sql))
         {
             echo "<script>alert('new record inserted')</script>";

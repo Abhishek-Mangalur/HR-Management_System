@@ -39,6 +39,12 @@
             <input type="text" name="bnkname"><br>
             <label for="Name">A/c No</label><br>
             <input type="text" name="acno"><br>
+            <label for="Name">DOB</label><br>
+            <input type="text" name="dob"><br>
+            <label for="Name">Mobile No</label><br>
+            <input type="number" name="mob"><br>
+            <label for="Name">Designation</label><br>
+            <input type="text" name="desig"><br>
         </div>
         <div class="div2">
             <div class="div21">
