@@ -98,8 +98,7 @@ INSERT INTO `empdetails` (`id`, `empid`, `password`, `name`, `addr`, `dept`, `ba
 (1, 1001, 'abcd', 'Arjun', 'Bengaluru', 'IT', 'SBI', 15646352, 'Male', 'M.Tech ', 'emp1', 'arjun@gmail.com', 26, '20/12/1998', 9876543210, 'Fullstack Developer'),
 (2, 1002, 'abcd', 'Aadi', 'Bengaluru', 'IT', 'BOB', 465465, 'Male', 'B.Tech ', 'emp2', 'aadi@gmail.com', 22, '04/06/2002', 8796541230, 'Front-end Developer'),
 (3, 1003, 'abcd', 'Akash', 'Chennai', 'IT', 'Central', 548443, 'Male', 'B.Tech ', 'emp3', 'akash@gmail.com', 22, '14/02/2002', 7865413153, 'Back-end Developer'),
-(4, 1004, 'abcd', 'Bharath', 'Bengaluru', 'E-commerce', 'IDBI', 463482, 'Male', 'B.Tech ', 'emp4', 'bharath@gmail.com', 20, '26/03/2003', 9148670253, 'Marketing'),
-(5, 1005, 'abcd', 'Chetan', 'Belagavi', 'Web Dev', 'Canara', 48748455, 'Male', 'B.Tech ', 'emp5', 'chetan@gmail.com', 20, '10/07/2003', 9972977959, 'Front-end Developer');
+(4, 1004, 'abcd', 'Bharath', 'Bengaluru', 'E-commerce', 'IDBI', 463482, 'Male', 'B.Tech ', 'emp4', 'bharath@gmail.com', 20, '26/03/2003', 9148670253, 'Marketing');
 
 -- --------------------------------------------------------
 

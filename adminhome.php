@@ -62,10 +62,10 @@
             </div>
             <div class="div32" id="div322">
                 <div class="division" id="division1">
-                    <h3>Total Departments</h3>
+                    <h3>Total Employees</h3>
                     <div class="divs">
                         <?php 
-                        $query = "SELECT * from department";
+                        $query = "SELECT * from empdetails";
                         $query_run = mysqli_query($conn, $query);
                         
                         if($dept_total = mysqli_num_rows($query_run))
@@ -80,10 +80,10 @@
                     </div>
                 </div>
                 <div class="division" id="division2">
-                    <h3>Total Employees</h3>
+                    <h3>Total Departments</h3>
                     <div class="divs">
                         <?php 
-                        $query = "SELECT * from empdetails";
+                        $query = "SELECT * from department";
                         $query_run = mysqli_query($conn, $query);
                         
                         if($dept_total = mysqli_num_rows($query_run))

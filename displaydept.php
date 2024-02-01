@@ -30,11 +30,12 @@
 
             <?php 
             if($result){
+                $i=1;
                 while($result = mysqli_fetch_assoc($data))
                 {
                     echo "
                     <tr>
-                        <td class='c1'>".$result['id']."</td>
+                        <td class='c1'>".$i++."</td>
                         <td class='c1'>".$result['d_name']."</td>
                         <td class='c1'>".$result['d_id']."</td>
                         <td class='c1'>".$result['d_emp']."</td>

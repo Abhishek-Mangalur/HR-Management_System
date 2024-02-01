@@ -9,48 +9,39 @@ body{
 #div2{
     height: 50px;
     margin: 10px;
-    float: left;
+    display: flex;
+    justify-content: space-between;
     font-size: 1.5em;
     color: rgb(110,223,246);
-    /* border: 2px solid black; */
 }
 #a31{
     text-decoration: none;
     color: black;
     background-color: rgb(110,223,246);
-    font-size: 1.3em;
     border-radius: 5px;
-    padding: 10px;
-    float: right;
-    margin: 10px 10px;
+    padding: 10px 10px 5px 10px;
 }
 #a31:hover{
     text-decoration: underline;
 }
 #div4{
-    width: 1360px;
-    float: left;
     padding: 10px;
     background-color: rgb(110,223,246);
 }
 #a41{
     color: black;
     text-decoration: none;
-    font-size: 1.3em;
-    margin-left: 20px;
+    font-size: 1.5em;
+    margin-left: 10px;
 }
 #a41:hover{
     text-decoration: underline;
 }
 #div6{
-    width: 1280px;
-    margin: 10px;
     display: flex;
-    /* border: 2px solid black; */
 }
 #div61{
     display: flex;
-    /* border: 2px solid black; */
     margin: 30px 0 0 30px;
     width: 200px;
     height: 200px;
@@ -64,11 +55,9 @@ body{
     margin: 30px 0 0 30px;
     border-left: 2px solid black;
     padding-left: 30px;
-    width: 1030px;
     color: rgb(110,223,246);
 }
 
 .div7{
-    /* border:  2px solid black; */
     font-size: 1.3em;
 }

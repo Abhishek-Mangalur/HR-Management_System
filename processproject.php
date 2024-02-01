@@ -10,7 +10,7 @@
         if(mysqli_query($conn, $sql))
         {
             echo "<script>alert('new record inserted')</script>";
-            echo "<script>window.open('displaydept.php','_self')</script>";
+            echo "<script>window.open('adminhome.php','_self')</script>";
         }
         else
         {

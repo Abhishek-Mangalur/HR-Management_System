@@ -23,9 +23,7 @@
 <body>
 <div class="div">
         <div id="div2">
-            <h2>Hello <?php echo $_SESSION['name']; ?></h2><br><br>
-        </div>
-        <div id="div3">
+            <h2>Hello <?php echo $_SESSION['name']; ?></h2>
             <a href="logout.php" id="a31">Logout</a>
         </div>
         <div id="div4">
@@ -33,7 +31,7 @@
         </div>
         <div id="div6">
             <div class="divs" id="div61">
-            </div>
+            </div> 
             <div class="divs" id="div62">
                 <div class="div7">
                     <h1><u>Profile</u></h1><br>
