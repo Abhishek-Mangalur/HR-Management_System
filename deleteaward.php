@@ -10,7 +10,7 @@
     if($data)
     {
         echo "<script>alert('Data deleted successfully')</script>";
-        echo "<script>window.open('displayaward.php','_self')</script>";
+        echo "<script>window.open('adminhome.php','_self')</script>";
     }
     else{
         echo "Failed";

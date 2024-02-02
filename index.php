@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee</title>
+    <title>HR</title>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript">
         function preventBack() {window.history.forward();}
@@ -21,10 +21,10 @@
 
 <body>
     <div class="wrapper">
-        <form action="emplogin.php" method="POST">
+        <form action="adminlogin.php" method="POST">
             <a href="index.php" class="c1">HR</a>
             <a href="Employeepanel.php" class="c1">Emp</a>
-            <h1>Employee Login</h1>
+            <h1>HR Login</h1>
             <?php if(isset($_GET['error'])) { ?>
                 <p class="error"><?php echo $_GET['error']; ?></p>
             <?php } ?>

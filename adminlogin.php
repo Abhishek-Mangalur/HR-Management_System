@@ -14,10 +14,10 @@
         $pass = validate($_POST['password']);
 
         if(empty($uname)){
-            header("Location: Adminpanel.php?error=User Name is required");
+            header("Location: index.php?error=User Name is required");
             exit();
         }else if(empty($pass)){
-            header("Location: Adminpanel.php?error=Password is required");
+            header("Location: index.php?error=Password is required");
             exit();
         }else{
             $sql = "SELECT * FROM users WHERE user_name='$uname' AND password='$pass' ";
@@ -32,11 +32,11 @@
                     header("Location: adminhome.php");
                     exit();
                 }else{
-                    header("Location: Adminpanel.php?error=Incorrect username or password");
+                    header("Location: index.php?error=Incorrect username or password");
                     exit();
                 }
             }else{
-                header("Location: Adminpanel.php");
+                header("Location: index.php");
                 exit();
             }
         }

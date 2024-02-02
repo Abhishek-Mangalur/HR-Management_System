@@ -1,10 +1,9 @@
 <?php
 
 session_start();
-
 session_unset();
 session_destroy();
 
-header("Location: Adminpanel.php");
+header("Location: index.php");
 
 ?>

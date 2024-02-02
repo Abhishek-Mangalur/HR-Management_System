@@ -144,7 +144,7 @@
 
 <?php
 } else{
-    header("Location: Adminpanel.php");
+    header("Location: index.php");
     exit();
 }
 ?>
