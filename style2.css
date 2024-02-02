@@ -7,7 +7,6 @@ body{
     background-color: rgb(3,40,48);
 }
 #div2{
-    height: 50px;
     margin: 10px;
     display: flex;
     justify-content: space-between;
@@ -19,7 +18,7 @@ body{
     color: black;
     background-color: rgb(110,223,246);
     border-radius: 5px;
-    padding: 10px 10px 5px 10px;
+    padding: 5px 5px 5px 5px;
 }
 #a31:hover{
     text-decoration: underline;
