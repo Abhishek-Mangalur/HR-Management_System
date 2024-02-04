@@ -15,7 +15,7 @@ body{
 }
 
 #div11{
-    color: rgb(110,223,246);
+    color: #0DCAF0;
 }
 
 #div21{
@@ -31,7 +31,7 @@ body{
     padding: 10px;
     border-radius: 10px;
     border: 1px solid black;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .b1:hover{

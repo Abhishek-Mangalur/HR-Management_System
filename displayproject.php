@@ -21,9 +21,9 @@
     <table class="tbl">
         <thead>
             <tr>
-                <th scope="col" class="table1">Sl no</th>
-                <th scope="col" class="table1">Project name</th>
-                <th scope="col" class="table1">Project id</th>
+                <th scope="col" class="table1">Sl No</th>
+                <th scope="col" class="table1">Project Name</th>
+                <th scope="col" class="table1">Project Id</th>
                 <th scope="col" class="table1">Duration</th>
                 <th scope="col" class="table1">Delete</th>
             </tr>

@@ -21,7 +21,7 @@
     <table class="tbl">
         <thead>
             <tr>
-                <th scope="col" class="table1">Sl no</th>
+                <th scope="col" class="table1">Sl No</th>
                 <th scope="col" class="table1">Name</th>
                 <th scope="col" class="table1">Department</th>
                 <th scope="col" class="table1">Location</th>

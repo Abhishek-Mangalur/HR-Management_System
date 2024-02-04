@@ -21,8 +21,8 @@
     <table class="tbl">
         <thead>
             <tr>
-                <th scope="col" class="table1">Sl no</th>
-                <th scope="col" class="table1">Award_name</th>
+                <th scope="col" class="table1">Sl No</th>
+                <th scope="col" class="table1">Award Name</th>
                 <th scope="col" class="table1">Date</th>
                 <th scope="col" class="table1">Delete</th>
             </tr>

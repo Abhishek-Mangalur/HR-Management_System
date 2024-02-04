@@ -46,6 +46,8 @@
                                 Age: ".$result['age']." <br><br>
                                 Email: ".$result['email']." <br><br>
                                 Education: ".$result['edu']." <br><br>
+                                DOB: ".$result['dob']." <br><br>
+                                Phone No: ".$result['mob']." <br><br>
                             ";
                         
                     }

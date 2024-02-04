@@ -21,9 +21,9 @@
     <table class="tbl">
         <thead>
             <tr>
-                <th scope="col" class="table1">Sl no</th>
-                <th scope="col" class="table1">Dept_name</th>
-                <th scope="col" class="table1">Dept_id</th>
+                <th scope="col" class="table1">Sl No</th>
+                <th scope="col" class="table1">Dept Name</th>
+                <th scope="col" class="table1">Dept Id</th>
                 <th scope="col" class="table1">No. of Emp</th>
                 <th scope="col" class="table1">Delete</th>
             </tr>

@@ -11,21 +11,23 @@ body{
     display: flex;
     justify-content: space-between;
     font-size: 1.5em;
-    color: rgb(110,223,246);
+    color: #0DCAF0;
 }
 #a31{
-    text-decoration: none;
+    background-color: #0DCAF0;
     color: black;
-    background-color: rgb(110,223,246);
-    border-radius: 5px;
-    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 0.9em;
 }
 #a31:hover{
     text-decoration: underline;
 }
 #div4{
     padding: 10px;
-    background-color: rgb(110,223,246);
+    background-color: #0DCAF0;
 }
 #a41{
     color: black;
@@ -54,7 +56,7 @@ body{
     margin: 30px 0 0 30px;
     border-left: 2px solid black;
     padding-left: 30px;
-    color: rgb(110,223,246);
+    color: #0DCAF0;
 }
 
 .div7{

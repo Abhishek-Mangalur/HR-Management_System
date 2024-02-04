@@ -47,8 +47,8 @@
                     <tr>
                         <th>Name:</th>
                         <td class='c1'> ".$result['name']."</td>
-                        <th>Mobile No:</th>
-                        <td class='c1'> ".$result['mob']."</td> 
+                        <th>Location:</th>
+                        <td class='c1'> ".$result['addr']."</td> 
                     </tr>
                     <tr>
                         <th>Bank Name:</th>
@@ -57,10 +57,10 @@
                         <td class='c1'> ".$result['ac']."</td> 
                     </tr>
                     <tr>
-                        <th>DOB:</th>
-                        <td class='c1'> ".$result['dob']."</td>
-                        <th>Location:</th>
-                        <td class='c1'> ".$result['addr']."</td>
+                        <th>Serial No:</th>
+                        <td class='c1'> XXXXXX8945 </td>
+                        <th>Transaction Id:</th>
+                        <td class='c1'> XXXXXXL5NeI </td>
                     </tr>
                     <tr>
                         <th>STD Days:</th>
@@ -145,10 +145,10 @@
         </tr>
         
         <tr>
-            <td></td>
             <td><strong>NET PAY</strong></td>
             <td>Rs.35500</td>
-            <td></td>
+            <td>Mode of Payment</td>
+            <td>Online</td>
         </tr>
     </table>
 </body>
