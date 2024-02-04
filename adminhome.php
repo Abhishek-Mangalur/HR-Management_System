@@ -45,7 +45,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="a1">Projects &#x25BE;</a>
+                        <a href="#" class="a1">Project &#x25BE;</a>
                         <ul class="dropdown">
                             <li><a href="insertproject.php" class="a2">Add Project</a></li>
                             <li><a href="displayproject.php" class="a2">View Projects</a></li>
