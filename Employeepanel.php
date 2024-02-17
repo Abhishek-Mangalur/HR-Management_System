@@ -11,12 +11,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee</title>
+    <link rel="website icon" type="png" href="https://hrteamservices.com/wp-content/uploads/2021/06/cropped-HR-Team-Favicon.png">
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript">
-        function preventBack() {window.history.forward();}
-        setTimeout("preventBack()",0);
-        window.onunload = function () {null};
-    </script>
+    <script src="script.js"></script>
 </head>
 
 <body>

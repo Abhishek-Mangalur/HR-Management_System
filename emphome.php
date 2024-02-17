@@ -17,6 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="website icon" type="png" href="https://hrteamservices.com/wp-content/uploads/2021/06/cropped-HR-Team-Favicon.png">
     <link rel="stylesheet" href="style2.css">
 </head>
 
@@ -49,11 +50,10 @@
                                 DOB: ".$result['dob']." <br><br>
                                 Phone No: ".$result['mob']." <br><br>
                             ";
-                        
-                    }
-                    else{
-                        echo "No data found";
-                    }
+                        }
+                        else{
+                            echo "No data found";
+                        }
                     ?>
                 </div>
             </div>

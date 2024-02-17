@@ -12,29 +12,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<style>
-    body{
-        background-color: #bebdbd;
-    }
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary</title>
+    <link rel="website icon" type="png" href="https://hrteamservices.com/wp-content/uploads/2021/06/cropped-HR-Team-Favicon.png">
+    <style>
+        body{
+            background-color: #bebdbd;
+        }
 
-    table{
-        width: 100%;
-        border-collapse: collapse;
-        border: 1px solid black;
-    }
-    
-    table td{
-        line-height:25px;padding-left:15px;
-    }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
 
-    table th{
-        background-color:#fbc403; color:#363636;
-    }
-</style>
+        table td{
+            line-height:25px;padding-left:15px;
+        }
+
+        table th{
+            background-color:#fbc403; color:#363636;
+        }
+        #a1{
+            height: 100px;
+            background-color:#363636;
+            color:#ffffff;
+            text-align:center;
+            font-size:24px;
+            font-weight:600;
+        }
+    </style>
 </head>
 <body>
     <table border="1">
-        <tr height="100px" style="background-color:#363636;color:#ffffff;text-align:center;font-size:24px; font-weight:600;">
+        <tr id="a1">
             <td colspan='4'>TATA Group of Companies Private Limited</td>
         </tr>
 

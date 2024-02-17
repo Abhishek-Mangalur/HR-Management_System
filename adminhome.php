@@ -12,7 +12,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Home</title>
+    <title>Home</title>
+    <link rel="website icon" type="png" href="https://hrteamservices.com/wp-content/uploads/2021/06/cropped-HR-Team-Favicon.png">
     <link rel="stylesheet" href="style1.css">
 </head>
 
@@ -20,7 +21,7 @@
 <body>
     <div class="div">    
         <div class="div1" id="div11">
-            <h2 class="hrms"><u>HRMS</u></h2>
+            <h2><u>HRMS</u></h2>
         </div>
         <div class="div2" id="div21">
             <a href="logout.php" class="b1">Logout</a>
@@ -29,7 +30,7 @@
         <div class="div3" id="div31">
             <div class="div31" id="div311">
                 <ul class="items">
-                    <li class="litems"><a href="" class="a11" id="b1">Home</a></li>
+                    <li class="litems"><a href="#" class="a11" id="b1">Home</a></li>
                     <li>
                         <a href="#" class="a1">Employee &#x25BE;</a>
                         <ul class="dropdown">

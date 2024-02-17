@@ -14,7 +14,10 @@
         }
         else
         {
-            echo "error".mysqli_error($conn);
+            // echo "error".mysqli_error($conn);
+            // echo "<script>alert('Project id is already exists')</script>";
+            echo "<script>alert('exits')</script>";
+            echo "<script>window.open('adminhome.php','_self')</script>";
         }
         mysqli_close($conn);
         header('Location: adminhome.php');
