@@ -1,6 +1,6 @@
 <?php
 
-    include("Connection.php");
+    include "connection.php";
     error_reporting(0);
 
     $id = $_GET['rn'];

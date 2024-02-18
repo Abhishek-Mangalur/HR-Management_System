@@ -1,6 +1,6 @@
 <?php
 
-    include 'Connection.php';
+    include "connection.php";
     if(isset($_POST['submit']))
     {
         $p_name=$_POST['p_name'];

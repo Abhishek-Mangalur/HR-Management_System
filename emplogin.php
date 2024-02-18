@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include "Connection.php";
+    include "connection.php";
 
     if(isset($_POST['uname']) && isset($_POST['password'])) {
         function validate($data){
@@ -14,10 +14,10 @@
         $pass = validate($_POST['password']);
 
         if(empty($uname)){
-            header("Location: Employeepanel.php?error=User Name is required");
+            header("Location: employeepanel.php?error=User Name is required");
             exit();
         }else if(empty($pass)){
-            header("Location: Employeepanel.php?error=Password is required");
+            header("Location: employeepanel.php?error=Password is required");
             exit();
         }else{
             $sql = "SELECT * FROM empdetails WHERE user_name='$uname' AND password='$pass' ";
@@ -32,11 +32,11 @@
                     header("Location: emphome.php");
                     exit();
                 }else{
-                    header("Location: Employeepanel.php?error=Incorrect username or password");
+                    header("Location: employeepanel.php?error=Incorrect username or password");
                     exit();
                 }
             }else{
-                header("Location: Employeepanel.php");
+                header("Location: employeepanel.php");
                 exit();
             }
         }

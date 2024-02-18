@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include "Connection.php";
+    include "connection.php";
     $query = "select * from empdetails";
     $result = mysqli_query($conn,$query);
     $total = mysqli_num_rows($result);
@@ -128,7 +128,7 @@
 
 <?php
 } else{
-    header("Location: Employeepanel.php");
+    header("Location: employeepanel.php");
     exit();
 }
 ?>

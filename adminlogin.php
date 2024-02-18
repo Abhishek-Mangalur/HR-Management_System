@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include "Connection.php";
+    include "connection.php";
 
     if(isset($_POST['uname']) && isset($_POST['password'])) {
         function validate($data){

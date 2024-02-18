@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HR</title>
+    <title>Employee</title>
     <link rel="website icon" type="png" href="https://hrteamservices.com/wp-content/uploads/2021/06/cropped-HR-Team-Favicon.png">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
@@ -17,10 +17,10 @@
 
 <body>
     <div class="wrapper">
-        <form action="adminlogin.php" method="POST">
+        <form action="emplogin.php" method="POST">
             <a href="index.php" class="c1">HR</a>
             <a href="employeepanel.php" class="c1">Emp</a>
-            <h1>HR Login</h1>
+            <h1>Employee Login</h1>
             <?php if(isset($_GET['error'])) { ?>
                 <p class="error"><?php echo $_GET['error']; ?></p>
             <?php } ?>

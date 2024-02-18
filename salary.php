@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include "Connection.php";
+    include "connection.php";
     $user = $_SESSION['user_name'];
     $query = "select * from empdetails where user_name = '$user'";
     $result = mysqli_query($conn,$query);
@@ -169,7 +169,7 @@
 
 <?php
 } else{
-    header("Location: Employeepanel.php");
+    header("Location: employeepanel.php");
     exit();
 }
 ?>
