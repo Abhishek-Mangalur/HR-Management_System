@@ -42,8 +42,7 @@
                         <td class='c1'>".$result['dept']."</td>
                         <td class='c1'>".$result['addr']."</td>
                         <td class='c1'>".$result['email']."</td>
-                        <td class='c1'><a href='deleteemp.php?rn=$result[id]' onclick='return
-                        checkdelete()' class='btn2'>Delete</a></td>
+                        <td class='c1'><a href='deleteemp.php?rn=$result[id]' onclick='showPrompt()' class='btn2'>Delete</a></td>
                     </tr>
                     ";
                 }
@@ -54,5 +53,12 @@
             ?>
         </thead>
     </table>
+
+    <script>
+        function showPrompt() 
+        {
+            alert("Employee Deleted Successfully..!");
+        }
+    </script>
 </body>
 </html>

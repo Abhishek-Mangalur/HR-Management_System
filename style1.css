@@ -61,6 +61,8 @@ body{
     text-decoration: none;
     color: black;
     font-size: 1.4em;
+    padding-right: 10px;
+    border-right: 2px solid black;
 }
 
 .a11:hover{
@@ -114,6 +116,7 @@ ul li ul.dropdown{
     width: 160px;
     position: absolute;
     display: none;
+    z-index: 999;
 }
 
 ul li:hover ul.dropdown{

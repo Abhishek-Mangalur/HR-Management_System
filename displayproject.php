@@ -40,8 +40,7 @@
                         <td class='c1'>".$result['p_name']."</td>
                         <td class='c1'>".$result['p_id']."</td>
                         <td class='c1'>".$result['dur']."</td>
-                        <td class='c1'><a href='deleteproj.php?rn=$result[id]' onclick='return
-                        checkdelete()' class='btn2'>Delete</a></td>
+                        <td class='c1'><a href='deleteproj.php?rn=$result[id]' class='btn2' onclick='showPrompt()'>Delete</a></td>
                     </tr>
                     ";
                 }
@@ -52,5 +51,12 @@
             ?>
         </thead>
     </table>
+
+    <script>
+        function showPrompt() 
+        {
+            alert("Project Deleted Successfully..!");
+        }
+    </script>
 </body>
 </html>

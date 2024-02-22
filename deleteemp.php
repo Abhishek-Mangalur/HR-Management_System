@@ -9,7 +9,6 @@
     $data = mysqli_query($conn,$query);
     if($data)
     {
-        echo "<script>alert('Data deleted successfully')</script>";
         echo "<script>window.open('adminhome.php','_self')</script>";
     }
     else{

@@ -1,11 +1,11 @@
 <?php
     session_start();
     include "connection.php";
-    $user = $_SESSION['user_name'];
-    $query = "select * from empdetails where user_name = '$user'";
+    $user = $_SESSION['empid'];
+    $query = "select * from empdetails where empid = '$user'";
     $result = mysqli_query($conn,$query);
     $total = mysqli_num_rows($result);
-    if(isset($_SESSION['id']) && isset($_SESSION['user_name']))
+    if(isset($_SESSION['id']) && isset($_SESSION['empid']))
     {
 ?>
 
@@ -25,7 +25,9 @@
 <div class="div">
         <div id="div2">
             <h2>Hello <?php echo $_SESSION['name']; ?></h2>
-            <a href="logout.php" id="a31">Logout</a>
+        </div>
+        <div class="div3" id="div31">
+            <a href="logout.php" class="b1">Logout</a>
         </div>
         <div id="div4">
             <a href="salary.php" id="a41">Salary</a>

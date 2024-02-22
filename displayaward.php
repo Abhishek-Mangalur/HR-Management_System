@@ -38,8 +38,7 @@
                         <td class='c1'>".$i++."</td>
                         <td class='c1'>".$result['name']."</td>
                         <td class='c1'>".$result['date']."</td>
-                        <td class='c1'><a href='deleteaward.php?rn=$result[id]' onclick='return
-                        checkdelete()' class='btn2'>Delete</a></td>
+                        <td class='c1'><a href='deleteaward.php?rn=$result[id]' onclick='showPrompt()' class='btn2'>Delete</a></td>
                     </tr>
                     ";
                 }
@@ -50,5 +49,12 @@
             ?>
         </thead>
     </table>
+
+    <script>
+        function showPrompt() 
+        {
+            alert("Award Deleted Successfully..!");
+        }
+    </script>
 </body>
 </html>

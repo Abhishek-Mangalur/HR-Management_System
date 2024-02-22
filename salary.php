@@ -1,11 +1,11 @@
 <?php
     session_start();
     include "connection.php";
-    $user = $_SESSION['user_name'];
-    $query = "select * from empdetails where user_name = '$user'";
+    $user = $_SESSION['empid'];
+    $query = "select * from empdetails where empid = '$user'";
     $result = mysqli_query($conn,$query);
     $total = mysqli_num_rows($result);
-    if(isset($_SESSION['id']) && isset($_SESSION['user_name']))
+    if(isset($_SESSION['id']) && isset($_SESSION['empid']))
     {
 ?>
 

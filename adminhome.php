@@ -21,7 +21,7 @@
 <body>
     <div class="div">    
         <div class="div1" id="div11">
-            <h2><u>HRMS</u></h2>
+            <marquee behavior="" direction="right"><h2><u>HRMS</u></h2></marquee>
         </div>
         <div class="div2" id="div21">
             <a href="logout.php" class="b1">Logout</a>
@@ -55,7 +55,7 @@
                     <li>
                         <a href="#" class="a1">Award &#x25BE;</a>
                         <ul class="dropdown">
-                            <li><a href="insertaward.php" class="a2">Add Awards</a></li>
+                            <li><a href="insertaward.php" class="a2">Add Award</a></li>
                             <li><a href="displayaward.php" class="a2">View Awards</a></li>
                         </ul>
                     </li>

@@ -10,8 +10,10 @@
 <body>
     <form action="processaward.php" method="POST">
         <div class="div1">
-            <label for="Name">Name</label><br>
-            <input type="text" name="name" required><br>
+            <label for="Name">Award Id</label><br>
+            <input type="text" name="a_id" required><br>
+            <label for="Name">Award Name</label><br>
+            <input type="text" name="a_name" required><br>
             <label for="Name">Date</label><br>
             <input type="text" name="date" required><br>
             <button type="submit" name="submit" value="submit" id="i1">Submit</button>

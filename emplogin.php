@@ -13,29 +13,17 @@
         $uname = validate($_POST['uname']);
         $pass = validate($_POST['password']);
 
-        if(empty($uname)){
-            header("Location: employeepanel.php?error=User Name is required");
-            exit();
-        }else if(empty($pass)){
-            header("Location: employeepanel.php?error=Password is required");
-            exit();
-        }else{
-            $sql = "SELECT * FROM empdetails WHERE user_name='$uname' AND password='$pass' ";
+        $sql = "SELECT * FROM empdetails WHERE empid='$uname' AND password='$pass' ";
             $result = mysqli_query($conn, $sql);
-
             if(mysqli_num_rows($result) === 1){
                 $row = mysqli_fetch_assoc($result);
-                if($row['user_name'] === $uname && $row['password'] === $pass) {
-                    $_SESSION['user_name'] = $row['user_name'];
+                if($row['empid'] === $uname && $row['password'] === $pass) {
+                    $_SESSION['empid'] = $row['empid'];
                     $_SESSION['name'] = $row['name'];
                     $_SESSION['id'] = $row['id'];
                     header("Location: emphome.php");
                     exit();
                 }else{
-                    header("Location: employeepanel.php?error=Incorrect username or password");
-                    exit();
-                }
-            }else{
                 header("Location: employeepanel.php");
                 exit();
             }

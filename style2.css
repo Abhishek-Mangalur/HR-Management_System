@@ -8,10 +8,16 @@ body{
 }
 #div2{
     margin: 10px;
-    display: flex;
+    display: inline-block;
     justify-content: space-between;
     font-size: 1.5em;
     color: #0DCAF0;
+    animation: fadeIn 2s infinite;
+}
+@keyframes fadeIn {
+    0%   {opacity: 0;}
+    50%  {opacity: 1;}
+    100% {opacity: 0;}
 }
 #a31{
     background-color: #0DCAF0;
@@ -58,7 +64,22 @@ body{
     padding-left: 30px;
     color: #0DCAF0;
 }
-
 .div7{
     font-size: 1.3em;
+}
+#div31{
+    float: right;
+    margin: 20px 10px;
+}
+.b1{
+    background-color: #0DCAF0;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 1.2em;
+}
+.b1:hover{
+    text-decoration: underline;
 }

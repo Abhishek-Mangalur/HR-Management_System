@@ -80,8 +80,6 @@
         <div class="div1">
             <label for="Name">Employee id</label><br>
             <input type="text" name="eid" required><br>
-            <label for="Name">Username</label><br>
-            <input type="text" name="username" required><br>
             <label for="Name">Password</label><br>
             <input type="password" name="password" required><br>
             <label for="Name">Name</label><br>
@@ -98,6 +96,8 @@
             <input type="text" name="bnkname" required><br>
             <label for="Name">A/c No</label><br>
             <input type="text" name="acno" required><br>
+            <label for="Name">Salary</label><br>
+            <input type="number" name="salary" required><br>
             <label for="Name">DOB</label><br>
             <input type="text" name="dob" required><br>
             <label for="Name">Mobile No</label><br>
