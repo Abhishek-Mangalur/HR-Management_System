@@ -7,6 +7,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +21,7 @@
 <body>
     <div class="div">    
         <div class="div1" id="div11">
-            <marquee behavior="" direction="right"><h2><u>HRMS</u></h2></marquee>
+            <h2><u>HRMS</u></h2>
         </div>
         <div class="div2" id="div21">
             <a href="logout.php" class="b1">Logout</a>

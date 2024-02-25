@@ -36,3 +36,10 @@ input{
     padding: 4px;
     border: none;
 }
+
+#opt{
+    width: 310px;
+    height: 33px;
+    margin: 5px 0 10px 0;
+    font-size: 0.8em;
+}

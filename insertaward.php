@@ -1,3 +1,7 @@
+<?php
+    include "connection.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +19,26 @@
             <label for="Name">Award Name</label><br>
             <input type="text" name="a_name" required><br>
             <label for="Name">Date</label><br>
-            <input type="text" name="date" required><br>
+            <input type="date" name="date" style="height: 25px; font-size: 1.1em;" required><br>
+            <label for="Name">Employee Name</label><br>
+            <select name="empid" id="opt">  
+                <option>Select Options</option>
+                <?php
+                    $sql = "SELECT * FROM `empdetails`";
+                    $result = mysqli_query($conn ,$sql) or die("Query Failed");
+                    while($row = mysqli_fetch_assoc($result)){
+                ?>
+
+                    <option value="<?php echo  $row['empid']; ?>" >
+                        <?php 
+                            echo $row['uname'];
+                        ?>
+                    </option>
+
+                <?php 
+                    } 
+                ?>
+            </select>
             <button type="submit" name="submit" value="submit" id="i1">Submit</button>
         </div>
     </form>

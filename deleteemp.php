@@ -3,8 +3,8 @@
     include "connection.php";
     error_reporting(0);
 
-    $id = $_GET['rn'];
-    $query = "DELETE FROM empdetails WHERE ID = '$id'";
+    $empid = $_GET['rn'];
+    $query = "DELETE FROM empdetails WHERE empid = '$empid'";
 
     $data = mysqli_query($conn,$query);
     if($data)

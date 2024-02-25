@@ -38,11 +38,11 @@
                     echo "
                     <tr>
                         <td class='c1'>".$i++."</td>
-                        <td class='c1'>".$result['name']."</td>
+                        <td class='c1'>".$result['uname']."</td>
                         <td class='c1'>".$result['dept']."</td>
                         <td class='c1'>".$result['addr']."</td>
                         <td class='c1'>".$result['email']."</td>
-                        <td class='c1'><a href='deleteemp.php?rn=$result[id]' onclick='showPrompt()' class='btn2'>Delete</a></td>
+                        <td class='c1'><a href='deleteemp.php?rn=$result[empid]' onclick='showPrompt()' class='btn2'>Delete</a></td>
                     </tr>
                     ";
                 }

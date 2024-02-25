@@ -40,7 +40,7 @@
                         <td class='c1'>".$result['d_name']."</td>
                         <td class='c1'>".$result['d_id']."</td>
                         <td class='c1'>".$result['d_emp']."</td>
-                        <td class='c1'><a href='deletedept.php?rn=$result[id]' onclick='showPrompt()' class='btn2'>Delete</a></td>
+                        <td class='c1'><a href='deletedept.php?rn=$result[d_id]' onclick='showPrompt()' class='btn2'>Delete</a></td>
                     </tr>
                     ";
                 }

@@ -4,6 +4,7 @@
     if(isset($_POST['submit'])){
         $a_id=$_POST['a_id'];
         $a_name=$_POST['a_name'];
+        $empid=$_POST['empid'];
         $date=$_POST['date'];
 
         $check = "SELECT * FROM award WHERE a_id = '$a_id' ";
@@ -14,7 +15,7 @@
             echo "<script>window.open('insertaward.php','_self')</script>";
         }
         else if(mysqli_num_rows($result) == 0){
-            $sql="INSERT INTO award(a_id, a_name, date) VALUES('$a_id', '$a_name', '$date')";
+            $sql="INSERT INTO award(a_id, a_name, empid,dates) VALUES('$a_id', '$a_name', '$empid', '$date')";
             if(mysqli_query($conn, $sql))
             {
                 echo "<script>alert('New Award Added..!')</script>";

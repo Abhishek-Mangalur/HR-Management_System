@@ -3,8 +3,8 @@
     include "connection.php";
     error_reporting(0);
 
-    $id = $_GET['rn'];
-    $query = "DELETE FROM award WHERE ID = '$id'";
+    $a_id = $_GET['rn'];
+    $query = "DELETE FROM award WHERE a_id = '$a_id'";
 
     $data = mysqli_query($conn,$query);
     if($data)

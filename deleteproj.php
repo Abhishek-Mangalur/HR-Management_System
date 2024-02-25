@@ -3,8 +3,8 @@
     include "connection.php";
     error_reporting(0);
 
-    $id = $_GET['rn'];
-    $query = "DELETE FROM project WHERE ID = '$id'";
+    $p_id = $_GET['rn'];
+    $query = "DELETE FROM project WHERE p_id = '$p_id'";
 
     $data = mysqli_query($conn,$query);
     if($data)

@@ -25,6 +25,7 @@
                 <th scope="col" class="table1">Sl No</th>
                 <th scope="col" class="table1">Project Name</th>
                 <th scope="col" class="table1">Project Id</th>
+                <th scope="col" class="table1">Department</th>
                 <th scope="col" class="table1">Duration</th>
                 <th scope="col" class="table1">Delete</th>
             </tr>
@@ -39,8 +40,9 @@
                         <td class='c1'>".$i++."</td>
                         <td class='c1'>".$result['p_name']."</td>
                         <td class='c1'>".$result['p_id']."</td>
+                        <td class='c1'>".$result['d_id']."</td>
                         <td class='c1'>".$result['dur']."</td>
-                        <td class='c1'><a href='deleteproj.php?rn=$result[id]' class='btn2' onclick='showPrompt()'>Delete</a></td>
+                        <td class='c1'><a href='deleteproj.php?rn=$result[p_id]' class='btn2' onclick='showPrompt()'>Delete</a></td>
                     </tr>
                     ";
                 }

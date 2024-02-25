@@ -24,6 +24,7 @@
             <tr>
                 <th scope="col" class="table1">Sl No</th>
                 <th scope="col" class="table1">Award Name</th>
+                <th scope="col" class="table1">Employee Id</th>
                 <th scope="col" class="table1">Date</th>
                 <th scope="col" class="table1">Delete</th>
             </tr>
@@ -36,9 +37,10 @@
                     echo "
                     <tr>
                         <td class='c1'>".$i++."</td>
-                        <td class='c1'>".$result['name']."</td>
-                        <td class='c1'>".$result['date']."</td>
-                        <td class='c1'><a href='deleteaward.php?rn=$result[id]' onclick='showPrompt()' class='btn2'>Delete</a></td>
+                        <td class='c1'>".$result['a_name']."</td>
+                        <td class='c1'>".$result['empid']."</td>
+                        <td class='c1'>".$result['dates']."</td>
+                        <td class='c1'><a href='deleteaward.php?rn=$result[a_id]' onclick='showPrompt()' class='btn2'>Delete</a></td>
                     </tr>
                     ";
                 }

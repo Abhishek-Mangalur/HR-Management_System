@@ -54,3 +54,8 @@ input{
     padding: 4px;
     border: none;
 }
+
+#opt{
+    width: 310px;
+    height: 33px;
+}

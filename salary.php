@@ -59,7 +59,7 @@
                     echo "
                     <tr>
                         <th>Name:</th>
-                        <td class='c1'> ".$result['name']."</td>
+                        <td class='c1'> ".$result['uname']."</td>
                         <th>Location:</th>
                         <td class='c1'> ".$result['addr']."</td> 
                     </tr>
@@ -160,7 +160,7 @@
         <tr>
             <td><strong>NET PAY</strong></td>
             <td>Rs.35500</td>
-            <td>Mode of Payment</td>
+            <td><strong>Mode of Payment</strong></td>
             <td>Online</td>
         </tr>
     </table>

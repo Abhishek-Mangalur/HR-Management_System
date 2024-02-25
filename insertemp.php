@@ -73,12 +73,19 @@
             padding: 4px;
             border: none;
         }
+
+        #opt{
+            width: 310px;
+            height: 33px;
+            margin: 5px 0 10px 0;
+            font-size: 0.8em;
+        }
     </style>
 </head>
 <body>
     <form action="process.php" method="post">
         <div class="div1">
-            <label for="Name">Employee id</label><br>
+            <label for="Name">Employee Id</label><br>
             <input type="text" name="eid" required><br>
             <label for="Name">Password</label><br>
             <input type="password" name="password" required><br>
@@ -88,8 +95,25 @@
             <input type="text" name="addr" required><br>
             <label for="Name">Email</label><br>
             <input type="email" name="email" required><br>
-            <label for="Name">Department</label><br>
-            <input type="text" name="dept" required><br>
+            <label for="Name">Department Name</label><br>
+            <select name="dept" id="opt">  
+                <option>Select Options</option>
+                <?php
+                    $sql = "SELECT * FROM `department`";
+                    $result = mysqli_query($conn ,$sql) or die("Query Failed");
+                    while($row = mysqli_fetch_assoc($result)){
+                ?>
+
+                    <option value="<?php echo  $row['d_id']; ?>" >
+                        <?php 
+                            echo $row['d_name'];
+                        ?>
+                    </option>
+
+                <?php 
+                    } 
+                ?>
+            </select><br>
             <label for="Name">Age</label><br>
             <input type="text" name="age"required><br>
             <label for="Name">Bank Name</label><br>

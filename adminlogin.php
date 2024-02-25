@@ -19,7 +19,6 @@
             $row = mysqli_fetch_assoc($result);
             if($row['user_name'] === $uname && $row['password'] === $password) {
                 $_SESSION['user_name'] = $row['user_name'];
-                $_SESSION['name'] = $row['name'];
                 $_SESSION['id'] = $row['id'];
                 header("Location: adminhome.php");
                 exit();

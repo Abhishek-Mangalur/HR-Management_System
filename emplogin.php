@@ -11,15 +11,14 @@
         }
 
         $uname = validate($_POST['uname']);
-        $pass = validate($_POST['password']);
+        $password = validate($_POST['password']);
 
-        $sql = "SELECT * FROM empdetails WHERE empid='$uname' AND password='$pass' ";
+        $sql = "SELECT * FROM empdetails WHERE empid ='$uname' AND passwords ='$password' ";
             $result = mysqli_query($conn, $sql);
             if(mysqli_num_rows($result) === 1){
                 $row = mysqli_fetch_assoc($result);
-                if($row['empid'] === $uname && $row['password'] === $pass) {
+                if($row['empid'] === $uname && $row['passwords'] === $password) {
                     $_SESSION['empid'] = $row['empid'];
-                    $_SESSION['name'] = $row['name'];
                     $_SESSION['id'] = $row['id'];
                     header("Location: emphome.php");
                     exit();

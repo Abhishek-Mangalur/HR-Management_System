@@ -1,3 +1,7 @@
+<?php
+    include "connection.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,10 +16,31 @@
         <div class="div1">
             <label for="Name">Project Name</label><br>
             <input type="text" name="p_name" required><br>
-            <label for="Name">Project id</label><br>
+            <label for="Name">Project Id</label><br>
             <input type="text" name="p_id" required><br>
             <label for="Name">Duration of project</label><br>
             <input type="text" name="dur" required><br>
+            <label for="Name">Department Name</label><br>
+            
+            <select name="d_id" id="opt">  
+                <option>Select Options</option>
+                <?php
+                    $sql = "SELECT * FROM `department`";
+                    $result = mysqli_query($conn ,$sql) or die("Query Failed");
+                    while($row = mysqli_fetch_assoc($result)){
+                ?>
+
+                    <option value="<?php echo  $row['d_id']; ?>" >
+                        <?php 
+                            echo $row['d_name'];
+                        ?>
+                    </option>
+
+                <?php 
+                    } 
+                ?>
+            </select>
+
             <button type="submit" name="submit" value="submit" id="i1">Submit</button>
         </div>
     </form>
