@@ -50,7 +50,7 @@
                     <?php 
                         if($result = mysqli_fetch_assoc($results)){
                             echo "
-                                Employee id: ".$result['empid']." <br><br>
+                                Employee Id: ".$result['empid']." <br><br>
                                 Location: ".$result['addr']." <br><br>
                                 Department: ".$result['dept']." <br><br>
                                 Gender: ".$result['gender']." <br><br>
