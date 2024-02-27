@@ -2,6 +2,7 @@ body{
     background-color: rgb(3,40,48);
     color: #fff;
 }
+
 .div1{
     width: 300px;
     margin: auto;
@@ -16,19 +17,16 @@ body{
 }
 
 .div2{
-    /* max-width: 250px; */
     margin: auto;
 }
 
 .div21{
-    /* max-width: 210px; */
     margin: auto;
     display: flex;
     padding-bottom: 5px;
 }
 
 .div22{
-    /* max-width: 300px; */
     margin: auto;
     display: flex;
     padding-bottom: 5px;

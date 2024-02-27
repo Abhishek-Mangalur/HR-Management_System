@@ -4,12 +4,13 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HR</title>
+    <meta name="google-site-verification" content="y_AtsD-syuSAmartr69qWJLblSivBIcdNvlYn7LGnrM"/>
+    <meta name="keywords" content="HRMSAIT,hrmsait">
+    <title>HRMS</title>
     <link rel="website icon" type="png" href="https://hrteamservices.com/wp-content/uploads/2021/06/cropped-HR-Team-Favicon.png">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
@@ -24,6 +25,7 @@
             <?php if(isset($_GET['error'])) { ?>
                 <p class="error"><?php echo $_GET['error']; ?></p>
             <?php } ?>
+
             <div class="inputbox">
                 <input type="text" name="uname" placeholder="Username" required>
             </div>
@@ -34,7 +36,5 @@
             <button type="submit" class="btn">Login</button>
         </form>
     </div>
-
 </body>
-
 </html>

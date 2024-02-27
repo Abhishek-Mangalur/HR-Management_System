@@ -1,5 +1,8 @@
 <?php
+    session_start();
     include "connection.php";
+    if(isset($_SESSION['id']) && isset($_SESSION['user_name']))
+    {
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +14,7 @@
     <link rel="website icon" type="png" href="https://hrteamservices.com/wp-content/uploads/2021/06/cropped-HR-Team-Favicon.png">
     <link rel="stylesheet" href="style5.css">
 </head>
+
 <body>
     <form action="processaward.php" method="POST">
         <div class="div1">
@@ -19,7 +23,7 @@
             <label for="Name">Award Name</label><br>
             <input type="text" name="a_name" required><br>
             <label for="Name">Date</label><br>
-            <input type="date" name="date" style="height: 25px; font-size: 1.1em;" required><br>
+            <input type="date" name="date" style="height: 25px; font-size: 1em;" required><br>
             <label for="Name">Employee Name</label><br>
             <select name="empid" id="opt">  
                 <option>Select Options</option>
@@ -44,3 +48,10 @@
     </form>
 </body>
 </html>
+
+<?php
+} else{
+    header("Location: index.php");
+    exit();
+}
+?>

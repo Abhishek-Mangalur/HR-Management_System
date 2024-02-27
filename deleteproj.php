@@ -1,5 +1,4 @@
 <?php
-
     include "connection.php";
     error_reporting(0);
 
@@ -7,13 +6,10 @@
     $query = "DELETE FROM project WHERE p_id = '$p_id'";
 
     $data = mysqli_query($conn,$query);
-    if($data)
-    {
+    if($data){
         echo "<script>window.open('adminhome.php','_self')</script>";
-    }
-    else{
+    }else{
         echo "Failed";
     }
     header('Location: adminhome.php');
-
 ?>

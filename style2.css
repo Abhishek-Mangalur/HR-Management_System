@@ -3,9 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     background-color: rgb(3,40,48);
 }
+
 #div2{
     margin: 10px;
     display: inline-block;
@@ -19,6 +21,7 @@ body{
     50%  {opacity: 1;}
     100% {opacity: 0;}
 }
+
 #a31{
     background-color: #0DCAF0;
     color: black;
@@ -28,25 +31,31 @@ body{
     border: 1px solid black;
     font-size: 0.9em;
 }
+
 #a31:hover{
     text-decoration: underline;
 }
+
 #div4{
     padding: 10px;
     background-color: #0DCAF0;
 }
+
 #a41{
     color: black;
     text-decoration: none;
     font-size: 1.5em;
     margin-left: 10px;
 }
+
 #a41:hover{
     text-decoration: underline;
 }
+
 #div6{
     display: flex;
 }
+
 #div61{
     display: flex;
     margin: 30px 0 0 30px;
@@ -57,6 +66,7 @@ body{
     background-size: cover;
     border-radius: 10px;
 }
+
 #div62{
     display: flex;
     margin: 30px 0 0 30px;
@@ -64,13 +74,16 @@ body{
     padding-left: 30px;
     color: #0DCAF0;
 }
+
 .div7{
     font-size: 1.3em;
 }
+
 #div31{
     float: right;
     margin: 20px 10px;
 }
+
 .b1{
     background-color: #0DCAF0;
     color: black;
@@ -80,6 +93,7 @@ body{
     border: 1px solid black;
     font-size: 1.2em;
 }
+
 .b1:hover{
     text-decoration: underline;
 }

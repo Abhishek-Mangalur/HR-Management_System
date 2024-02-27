@@ -1,11 +1,11 @@
 <?php
-
-    include "connection.php";
-    $query = "select * from award";
-    $data = mysqli_query($conn,$query);
-    $total = mysqli_num_rows($data);
-    $result = $data;
-
+    session_start();
+    if(isset($_SESSION['id']) && isset($_SESSION['user_name'])){
+        include "connection.php";
+        $query = "select * from award";
+        $data = mysqli_query($conn,$query);
+        $total = mysqli_num_rows($data);
+        $result = $data;
 ?>
 
 <!DOCTYPE html>
@@ -17,8 +17,8 @@
     <link rel="website icon" type="png" href="https://hrteamservices.com/wp-content/uploads/2021/06/cropped-HR-Team-Favicon.png">
     <link rel="stylesheet" href="style3.css">
 </head>
-<body>
 
+<body>
     <table class="tbl">
         <thead>
             <tr>
@@ -32,8 +32,7 @@
             <?php 
             if($result){
                 $i=1;
-                while($result = mysqli_fetch_assoc($data))
-                {
+                while($result = mysqli_fetch_assoc($data)){
                     echo "
                     <tr>
                         <td class='c1'>".$i++."</td>
@@ -44,8 +43,7 @@
                     </tr>
                     ";
                 }
-            }
-            else{
+            }else{
                 echo "No data found";
             }
             ?>
@@ -53,10 +51,16 @@
     </table>
 
     <script>
-        function showPrompt() 
-        {
+        function showPrompt(){
             alert("Award Deleted Successfully..!");
         }
     </script>
 </body>
 </html>
+
+<?php
+} else{
+    header("Location: index.php");
+    exit();
+}
+?>

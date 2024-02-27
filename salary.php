@@ -45,6 +45,7 @@
         }
     </style>
 </head>
+
 <body>
     <table border="1">
         <tr id="a1">
@@ -54,49 +55,47 @@
         <tr>
             <td>
                 <?php 
-                    if($result = mysqli_fetch_assoc($result))
-                    {   
-                    echo "
-                    <tr>
-                        <th>Name:</th>
-                        <td class='c1'> ".$result['uname']."</td>
-                        <th>Location:</th>
-                        <td class='c1'> ".$result['addr']."</td> 
-                    </tr>
-                    <tr>
-                        <th>Bank Name:</th>
-                        <td class='c1'> ".$result['bank']."</td> 
-                        <th>A/C No:</th>
-                        <td class='c1'> ".$result['ac']."</td> 
-                    </tr>
-                    <tr>
-                        <th>Serial No:</th>
-                        <td class='c1'> XXXXXX8945 </td>
-                        <th>Transaction Id:</th>
-                        <td class='c1'> XXXXXXL5NeI </td>
-                    </tr>
-                    <tr>
-                        <th>STD Days:</th>
-                        <td class='c1'> 30 </td>
-                        <th>Working Days:</th>
-                        <td class='c1'> 30 </td>
-                    </tr>
-                    <tr>
-                        <th>Dapartment:</th>
-                        <td class='c1'> ".$result['dept']."</td>
-                        <th>Designation:</th>
-                        <td class='c1'> ".$result['desig']."</td> 
-                    </tr>
-                    ";
+                    if($result = mysqli_fetch_assoc($result)){   
+                        echo "
+                        <tr>
+                            <th>Name:</th>
+                            <td class='c1'> ".$result['uname']."</td>
+                            <th>Location:</th>
+                            <td class='c1'> ".$result['addr']."</td> 
+                        </tr>
+                        <tr>
+                            <th>Bank Name:</th>
+                            <td class='c1'> ".$result['bank']."</td> 
+                            <th>A/C No:</th>
+                            <td class='c1'> ".$result['ac']."</td> 
+                        </tr>
+                        <tr>
+                            <th>Serial No:</th>
+                            <td class='c1'> XXXXXX8945 </td>
+                            <th>Transaction Id:</th>
+                            <td class='c1'> XXXXXXL5NeI </td>
+                        </tr>
+                        <tr>
+                            <th>STD Days:</th>
+                            <td class='c1'> 30 </td>
+                            <th>Working Days:</th>
+                            <td class='c1'> 30 </td>
+                        </tr>
+                        <tr>
+                            <th>Dapartment:</th>
+                            <td class='c1'> ".$result['dept']."</td>
+                            <th>Designation:</th>
+                            <td class='c1'> ".$result['desig']."</td> 
+                        </tr>
+                        ";
                     }
                 ?>
             </td>
         </tr>
-        
     </table>
-        
+
     <tr></tr>
-    <br/>
+    <br>
     <table border="1">
         <tr>
             <th>Earnings</th>
@@ -129,8 +128,9 @@
         <tr>
             <td>Conveyance</td>
             <td>3000</td>
-            </tr>
-            <tr>
+        </tr>
+
+        <tr>
             <td>ADD Special allowance</td>
             <td>2000</td>
         </tr>
@@ -153,7 +153,7 @@
         <tr>
             <th>Gross Earnings</th>
             <td>Rs.38500</td>
-            <th >Gross Deductions</th>
+            <th>Gross Deductions</th>
             <td>Rs.3000</td>
         </tr>
         
@@ -168,7 +168,7 @@
 </html>
 
 <?php
-} else{
+}else{
     header("Location: employeepanel.php");
     exit();
 }

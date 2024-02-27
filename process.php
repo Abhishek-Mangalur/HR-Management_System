@@ -1,5 +1,4 @@
 <?php
-
     include "connection.php";
     if(isset($_POST['submit']))
     {
@@ -32,17 +31,13 @@
             echo "<script>window.open('insertemp.php','_self')</script>";
         }else if (mysqli_num_rows($result) == 0){
             $sql="INSERT INTO empdetails(empid, passwords, uname, addr, email, dept, age, dob, mob, desig, bank, ac, salary, gender, edu) VALUES('$empid', '$password', '$name', '$addr', '$email', '$dept', '$age', '$dob', '$mob', '$desig', '$bank', '$ac', '$salary', '$gender', '$chk')";
-            if(mysqli_query($conn, $sql))
-            {
+            if(mysqli_query($conn, $sql)){
                 echo "<script>alert('New Employee Added..!')</script>";
                 echo "<script>window.open('adminhome.php','_self')</script>";
-            }
-            else
-            {
+            }else{
                 echo "error".mysqli_error($conn);
             }
             mysqli_close($conn);
         }
     }
-
 ?>

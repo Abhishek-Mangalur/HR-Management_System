@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    include "connection.php";
+    if(isset($_SESSION['id']) && isset($_SESSION['user_name']))
+    {
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +14,7 @@
     <link rel="website icon" type="png" href="https://hrteamservices.com/wp-content/uploads/2021/06/cropped-HR-Team-Favicon.png">
     <link rel="stylesheet" href="style5.css">
 </head>
+
 <body>
     <form action="processdept.php" method="POST">
         <div class="div1">
@@ -21,3 +29,10 @@
     </form>
 </body>
 </html>
+
+<?php
+} else{
+    header("Location: index.php");
+    exit();
+}
+?>

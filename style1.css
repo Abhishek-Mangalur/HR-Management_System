@@ -89,6 +89,7 @@ body{
     text-align: center;
     padding: 20px;
     box-shadow: 30px 30px 30px black;
+    transition: transform 0.3s ease;
 }
 
 #division2{
@@ -154,4 +155,11 @@ ul li:hover ul.dropdown{
 .divs{
     padding: 30px;
     font-size: 2em;
+}
+
+.division:hover{
+    animation: pulse 1s;
+}
+@keyframes pulse{
+    100% { transform: scale(1.1); };
 }

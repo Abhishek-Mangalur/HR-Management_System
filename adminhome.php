@@ -7,7 +7,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +15,6 @@
     <link rel="website icon" type="png" href="https://hrteamservices.com/wp-content/uploads/2021/06/cropped-HR-Team-Favicon.png">
     <link rel="stylesheet" href="style1.css">
 </head>
-
 
 <body>
     <div class="div">    
@@ -61,6 +59,7 @@
                     </li>
                 </ul>
             </div>
+
             <div class="div32" id="div322">
                 <div class="division" id="division1">
                     <h3>Total Employees</h3>
@@ -80,6 +79,7 @@
                         ?>
                     </div>
                 </div>
+
                 <div class="division" id="division2">
                     <h3>Total Departments</h3>
                     <div class="divs">
@@ -99,8 +99,8 @@
                     </div>
                 </div>
             </div>
+
             <div class="div42" id="div422">
-                
                 <div class="division" id="division3">
                     <h3>Projects</h3>
                     <div class="divs">
@@ -119,6 +119,7 @@
                         ?>
                     </div>
                 </div>
+
                 <div class="division" id="division4">
                     <h3>Awards</h3>
                     <div class="divs">
@@ -141,7 +142,6 @@
         </div>
     </div>
 </body>
-
 </html>
 
 <?php

@@ -1,9 +1,6 @@
 <?php
     session_start();
     include "connection.php";
-    $query = "select * from empdetails";
-    $result = mysqli_query($conn,$query);
-    $total = mysqli_num_rows($result);
     if(isset($_SESSION['id']) && isset($_SESSION['user_name']))
     {
 ?>
@@ -15,73 +12,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee</title>
     <link rel="website icon" type="png" href="https://hrteamservices.com/wp-content/uploads/2021/06/cropped-HR-Team-Favicon.png">
-    <style>
-        body{
-            background-color: rgb(3,40,48);
-            color: #fff;
-        }
-        
-        .div1{
-            width: 300px;
-            margin: auto;
-            font-size: 1.4em;
-            width: 300px;
-            background-color: transparent;
-            border: 2px solid rgba(255, 255, 255, .2);
-            backdrop-filter: blur(20px);
-            box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-            border-radius: 10px;
-            padding: 30px 40px;
-        }
-
-        .div2{
-            /* max-width: 250px; */
-            margin: auto;
-        }
-
-        .div21{
-            /* max-width: 210px; */
-            margin: auto;
-            display: flex;
-            padding-bottom: 5px;
-        }
-
-        .div22{
-            /* max-width: 300px; */
-            margin: auto;
-            display: flex;
-            padding-bottom: 5px;
-        }
-
-        #i1{
-            background: #0DCAF0;
-            border-radius: 5px;
-            font-size: 1em;
-            align-content: center;
-            margin-top: 10px;
-        }
-
-        #i1:hover{
-            cursor: pointer;
-            opacity: .7;
-        }
-
-        input{
-            margin: 5px 0 15px 0;
-            width: 300px;
-            font-size: 0.8em;
-            padding: 4px;
-            border: none;
-        }
-
-        #opt{
-            width: 310px;
-            height: 33px;
-            margin: 5px 0 10px 0;
-            font-size: 0.8em;
-        }
-    </style>
+    <link rel="stylesheet" href="style5.css">
 </head>
+
 <body>
     <form action="process.php" method="post">
         <div class="div1">
@@ -136,6 +69,7 @@
                     <input type="radio" name="gender" value="Female">&nbsp;
                     <label for="Name">Female</label><br>
                 </div>
+
                 <div class="div22">
                     <label for="Name">Education:</label>&nbsp;&nbsp;
                     <input type="checkbox" name="education[]" value="B.Tech">&nbsp;
@@ -144,6 +78,7 @@
                     <label for="Name">M.Tech</label><br>
                 </div>
             </div>
+
             <button type="submit" name="submit" value="submit" id="i1">Submit</button>
         </div>
     </form>
@@ -152,7 +87,7 @@
 
 <?php
 } else{
-    header("Location: employeepanel.php");
+    header("Location: index.php");
     exit();
 }
 ?>
