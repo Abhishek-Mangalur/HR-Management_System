@@ -19,7 +19,7 @@ This project contains five Entities
 
 ### In HR Login: <br>
 HR can Add or Remove the new employee details <br>
-For every option there are two options 
+For every entity there are two options 
 Add option And View option
 
 ![Logo](/Images/HR_Homepage.png)
