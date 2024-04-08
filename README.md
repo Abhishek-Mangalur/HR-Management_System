@@ -2,7 +2,7 @@
 This Project is based on DATABASE <br>
 
 ## Project Link: 
-### https://hrmsait.000webhostapp.com/
+### https://hrmsait.000webhostapp.com
 ### Login Details available in "login.txt"
 
 # I designed this project based on the following languages
