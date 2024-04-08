@@ -6,7 +6,7 @@ This Project is based on DATABASE <br>
 ### Login Details available in "login.txt"
 
 # I designed this project based on the following languages
-Front end: HRML, CSS, JAVASCRIPT <br>
+Front end: HTML, CSS, JAVASCRIPT <br>
 Back end: PHP, MySQL <br>
 IDE: MySQL workbench
 
